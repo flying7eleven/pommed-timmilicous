@@ -5,20 +5,21 @@
 # Contributor: Other contributors existed but lost information
 # Contributor: dpevp <daniel.plaza.espi@gmail.com>
 # Contributor: jordi Cerdan (jcerdan) <jcerdan@tecob.com>
+# Contributor: Tim Hütz <tim@huetz.biz>
 
-pkgname=pommed-light
+pkgname=pommed-timmilicous
 pkgver=1.47lw
 pkgrel=1
-pkgdesc="Handles the hotkeys of Apple MacBook (Pro) laptops - lightweight edition"
+pkgdesc="Handles the hotkeys of Apple MacBook (Pro) laptops"
 arch=('i686' 'x86_64')
-url="https://github.com/bytbox/pommed-light"
+url="https://github.com/thuetz/pommed-timmilicous"
 license=('GPL2')
 install=$pkgname.install
 makedepends=('pkgconfig')
-depends=('alsa-lib' 'confuse' 'audiofile' 'pciutils')
+depends=('alsa-lib' 'confuse' 'audiofile' 'pciutils', 'gtk2')
 conflicts=('pommed')
 optdepends=('eject: disc ejection support')
-source=(https://github.com/bytbox/${pkgname}/archive/v${pkgver}.tar.gz pommed.service)
+source=(https://github.com/thuetz/${pkgname}/archive/${pkgver}.tar.gz pommed.service)
 dfname="${pkgname}-${pkgver}"
 md5sums=('36b21b215b17577c561439bc76fd00ef'
          'fd5be6c0aa9ac4a0b1b628a23361b4cf')
